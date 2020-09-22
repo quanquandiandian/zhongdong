@@ -5,6 +5,9 @@ from django.db import models
 class BookInfo(models.Model):
     # 创建字段，字段类型
     name = models.CharField(max_length=10)
+    def __str__(self):
+
+        return self.name
 
 # 准备人物列表信息的模板类
 class PeopleInfo(models.Model):
